@@ -11,312 +11,351 @@
 <body>
   <div>
     <nav
-      class="bg-white fixed top-0 left-0 w-full h- z-50 py-2 px-2 sm:px-8 lg:px-[2rem] xl:px-[8.75rem] flex items-center justify-between shadow-sm">
-      <div class="flex">
-        <div class="md:col-span-3">
-          <a href="" class="flex justify-center md:justify-start focus:outline-none">
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAAAYCAYAAADH9X5VAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjlFMDkzNEY3QUQxRjExRUQ4QkREQThFQTZFNEQwQTcxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjlFMDkzNEY4QUQxRjExRUQ4QkREQThFQTZFNEQwQTcxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OUUwOTM0RjVBRDFGMTFFRDhCRERBOEVBNkU0RDBBNzEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OUUwOTM0RjZBRDFGMTFFRDhCRERBOEVBNkU0RDBBNzEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7uuRVeAAAKQklEQVR42uxaC5RVZRX+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"
-              class="" alt="">
-          </a>
-        </div>
-      </div>
-
-      <div class=" items-center space-x-8 p-2 relative hidden lg:flex"
-        style="width:70%; justify-content: space-evenly;">
-        <div style="display: flex; align-items: center; justify-content: center; margin-right:20px;">
-          <!-- Home with Dropdown -->
-          <div class="group relative" style="margin-right: 45px;">
-            <a href="/index.html" class="text-gray-700 hover:text-gray-900 font-medium">Home </a>
-          </div>
-
-          <!-- Jobs with Dropdown -->
-          <div class="group relative" style="margin-right: 40px;">
-            <li class="text-gray-700 list-none hover:text-gray-900 font-medium">Jobs <i class="fa-solid fa-angle-down"
-                style="color: #000000; font-size: 12px;"></i></li>
-
-            <!-- Main Dropdown -->
-            <div
-              class="absolute left-0 mt-0.5 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-10">
-              <ul class="py-2">
-
-                <!-- Job Categories -->
-                <li>
-                  <a href="/src/jobs/jobCategories.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
-                    Categories</a>
-                </li>
-
-                <!-- Job Grids with Nested Dropdown (opens on click) -->
-                <li class="relative">
-                  <a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
-                    Grids</a>
-
-                </li>
-
-                <!-- Job Lists with Nested Dropdown (opens on click) -->
-                <li class="relative">
-                  <a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
-                    lists</a>
-
-                </li>
-
-                <li class="relative">
-                  <a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
-                    Detail</a>
-
-                </li>
-                <li>
-                  <a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
-                    Apply</a>
-                </li>
-
-                <li>
-                  <a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
-                    Post</a>
-                </li>
-                <li>
-                  <a href="/src/specialPages/404.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Career</a>
-                </li>
-              </ul>
+        class="bg-white fixed top-0 left-0 w-full h- z-50 py-2 px-2 sm:px-8 lg:px-[2rem] xl:px-[8.75rem] flex items-center justify-between shadow-sm">
+        <div class="flex">
+            <div class="md:col-span-3">
+                <a href="" class="flex justify-center md:justify-start focus:outline-none">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAAAYCAYAAADH9X5VAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjlFMDkzNEY3QUQxRjExRUQ4QkREQThFQTZFNEQwQTcxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjlFMDkzNEY4QUQxRjExRUQ4QkREQThFQTZFNEQwQTcxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OUUwOTM0RjVBRDFGMTFFRDhCRERBOEVBNkU0RDBBNzEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OUUwOTM0RjZBRDFGMTFFRDhCRERBOEVBNkU0RDBBNzEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7uuRVeAAAKQklEQVR42uxaC5RVZRX+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"
+                        class="" alt="">
+                </a>
             </div>
-          </div>
+        </div>
 
-          <!-- Pages with Dropdown -->
-          <div class="group relative" style="margin-right: 40px;">
-            <li class="text-gray-700 list-none hover:text-gray-900 font-medium">Pages <i class="fa-solid fa-angle-down"
-                style="color: #000000; font-size: 12px;"></i></li>
-            <div
-              class="dropdown-content invisible absolute left-0 mt-0.5 w-48 bg-white border border-gray-200 shadow-lg rounded-md group-hover:visible group-hover:opacity-100 transition-opacity duration-300 z-10">
-              <ul class="py-2">
-                <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About
-                    us</a>
-                  </a>
-                </li>
-                <li><a href="/src/specialPages/404.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Services</a>
-                  </a>
-                </li>
-                <li><a href="/src/specialPages/404.html"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Pricing</a> </a>
-                </li>
-                <li class="/src/specialPages/404.html">
-                  <button id="pages-employee-toggle"
-                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
-                    Employee <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
-                  </button>
+        <div class=" items-center space-x-8 p-2 relative hidden lg:flex"
+            style="width:70%; justify-content: space-evenly;">
+            <div style="display: flex; align-items: center; justify-content: center; margin-right:20px;">
+                <!-- Home with Dropdown -->
+                <div class="group relative" style="margin-right: 45px;">
+                    <a href="/index.html" class="text-gray-700 hover:text-gray-900 font-medium">Home </a>
+                </div>
 
-                  <!-- Nested Dropdown for Job Grids -->
-                  <div id="pages-employee-menu"
-                    class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
-                    <ul class="py-2">
-                      <li>
-                        <a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Employers</a>
-                      </li>
-                      <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Employer details</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="relative">
-                  <button id="pages-candidates-toggle"
-                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
-                    Candidates <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
-                  </button>
-
-                  <!-- Nested Dropdown for Job Grids -->
-                  <div id="pages-candidates-menu"
-                    class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
-                    <ul class="py-2">
-                      <li>
-                        <a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Candidates</a>
-                      </li>
-                      <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Candidate Profile</a></li>
-
-                      <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Profile Setting</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="relative">
-                  <button id="pages-helpcenter-toggle"
-                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
-                    Helpcenter <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
-                  </button>
-
-                  <!-- Nested Dropdown for Job Grids -->
-                  <div id="pages-helpcenter-menu"
-                    class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
-                    <ul class="py-2">
-                      <li>
-                        <a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Overview</a>
-                      </li>
-                      <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          FAQs</a></li>
-
-                      <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Guides</a></li>
-                      <li><a href="/src/specialPages/404.html"
-                          class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
-                          Support</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="relative">
-                  <button id="pages-blogs-toggle"
-                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
-                    Blogs <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
-                  </button>
-
-                  <!-- Nested Dropdown for Job Grids -->
-                  <div id="pages-blogs-menu"
-                    class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
-                    <ul class="py-2">
-                      <li>
-                        <a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Blog</a>
-                      </li>
-                      <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Blog details </a></li>
+                <!-- Jobs with Dropdown -->
+                <div class="group relative" style="margin-right: 40px;">
+                    <li class="text-gray-700 list-none hover:text-gray-900 font-medium" id="job-grids-toggle">Jobs
+                        <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                    </li>
 
 
-                    </ul>
-                  </div>
-                </li>
-                <li class="relative">
-                  <button id="pages-auth-toggle"
-                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
-                    Auth Pages <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
-                  </button>
+                    <!-- Main Dropdown -->
+                    <div id="job-grids-menu"
+                        class="absolute left-0 mt-0.5 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-10">
+                        <ul class="py-2">
 
-                  <!-- Nested Dropdown for Job Grids -->
-                  <div id="pages-auth-menu"
-                    class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
-                    <ul class="py-2">
-                      <li>
-                        <a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Login</a>
-                      </li>
-                      <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Sign up</a></li>
+                            <!-- Job Categories -->
+                            <li>
+                                <a href="/src/jobs/jobCategories.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                    Categories</a>
+                            </li>
 
-                      <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Forgot password</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="relative">
-                  <button id="pages-utility-toggle"
-                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
-                    Utility <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
-                  </button>
+                            <!-- Job Grids with Nested Dropdown (opens on click) -->
+                            <li class="relative">
+                                <a href="/src/specialPages/404.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                    Grids</a>
 
-                  <!-- Nested Dropdown for Job Grids -->
-                  <div id="pages-utility-menu"
-                    class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
-                    <ul class="py-2">
-                      <li>
-                        <a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Terms of Services</a>
-                      </li>
-                      <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Policy</a></li>
+                            </li>
+
+                            <!-- Job Lists with Nested Dropdown (opens on click) -->
+                            <li class="relative">
+                                <a href="/src/specialPages/404.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                    lists</a>
+
+                            </li>
+
+                            <li class="relative">
+                                <a href="/src/specialPages/404.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                    Detail</a>
+
+                            </li>
+                            <li>
+                                <a href="/src/jobs/jobApply.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                    Apply</a>
+                            </li>
+
+                            <li>
+                                <a href="/src/specialPages/404.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                    Post</a>
+                            </li>
+                            <li>
+                                <a href="/src/specialPages/404.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Career</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pages with Dropdown -->
+                <div class="group relative" style="margin-right: 40px;">
+                    <li class="text-gray-700 list-none hover:text-gray-900 font-medium">Pages <i
+                            class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i></li>
+                    <div
+                        class="dropdown-content invisible absolute left-0 mt-0.5 w-48 bg-white border border-gray-200 shadow-lg rounded-md group-hover:visible group-hover:opacity-100 transition-opacity duration-300 z-10">
+                        <ul class="py-2">
+                            <li><a href="/src/specialPages/404.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About
+                                    us</a>
+                                </a>
+                            </li>
+                            <li><a href="/src/specialPages/404.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Services</a>
+                                </a>
+                            </li>
+                            <li><a href="/src/specialPages/404.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Pricing</a> </a>
+                            </li>
+                            <li class="/src/specialPages/404.html">
+                                <button id="pages-employee-toggle"
+                                    class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                    Employee <i class="fa-solid fa-angle-down"
+                                        style="color: #000000; font-size: 12px;"></i>
+                                </button>
+
+                                <!-- Nested Dropdown for Job Grids -->
+                                <div id="pages-employee-menu"
+                                    class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
+                                    <ul class="py-2">
+                                        <li>
+                                            <a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Employers</a>
+                                        </li>
+                                        <li><a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Employer details</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="relative">
+                                <button id="pages-candidates-toggle"
+                                    class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                    Candidates <i class="fa-solid fa-angle-down"
+                                        style="color: #000000; font-size: 12px;"></i>
+                                </button>
+
+                                <!-- Nested Dropdown for Job Grids -->
+                                <div id="pages-candidates-menu"
+                                    class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
+                                    <ul class="py-2">
+                                        <li>
+                                            <a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Candidates</a>
+                                        </li>
+                                        <li><a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Candidate Profile</a></li>
+
+                                        <li><a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Profile Setting</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="relative">
+                                <button id="pages-helpcenter-toggle"
+                                    class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                    Helpcenter <i class="fa-solid fa-angle-down"
+                                        style="color: #000000; font-size: 12px;"></i>
+                                </button>
+
+                                <!-- Nested Dropdown for Job Grids -->
+                                <div id="pages-helpcenter-menu"
+                                    class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
+                                    <ul class="py-2">
+                                        <li>
+                                            <a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Overview</a>
+                                        </li>
+                                        <li><a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                FAQs</a></li>
+
+                                        <li><a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Guides</a></li>
+                                        <li><a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                                Support</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="relative">
+                                <button id="pages-blogs-toggle"
+                                    class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                    Blogs <i class="fa-solid fa-angle-down"
+                                        style="color: #000000; font-size: 12px;"></i>
+                                </button>
+
+                                <!-- Nested Dropdown for Job Grids -->
+                                <div id="pages-blogs-menu"
+                                    class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
+                                    <ul class="py-2">
+                                        <li>
+                                            <a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Blog</a>
+                                        </li>
+                                        <li><a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Blog details </a></li>
 
 
-                    </ul>
-                  </div>
-                </li>
-                <li class="relative">
-                  <button id="pages-special-toggle"
-                    class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
-                    Special <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
-                  </button>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="relative">
+                                <button id="pages-auth-toggle"
+                                    class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                    Auth Pages <i class="fa-solid fa-angle-down"
+                                        style="color: #000000; font-size: 12px;"></i>
+                                </button>
 
-                  <!-- Nested Dropdown for Job Grids -->
-                  <div id="pages-special-menu"
-                    class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
-                    <ul class="py-2">
-                      <li>
-                        <a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Coming Soon</a>
-                      </li>
-                      <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          maintainence</a></li>
+                                <!-- Nested Dropdown for Job Grids -->
+                                <div id="pages-auth-menu"
+                                    class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
+                                    <ul class="py-2">
+                                        <li>
+                                            <a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Login</a>
+                                        </li>
+                                        <li><a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Sign up</a></li>
 
-                      <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          404!</a></li>
-                      <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                          Thank you</a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
+                                        <li><a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Forgot password</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="relative">
+                                <button id="pages-utility-toggle"
+                                    class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                    Utility <i class="fa-solid fa-angle-down"
+                                        style="color: #000000; font-size: 12px;"></i>
+                                </button>
+
+                                <!-- Nested Dropdown for Job Grids -->
+                                <div id="pages-utility-menu"
+                                    class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
+                                    <ul class="py-2">
+                                        <li>
+                                            <a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Terms of Services</a>
+                                        </li>
+                                        <li><a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Policy</a></li>
+
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="relative">
+                                <button id="pages-special-toggle"
+                                    class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                    Special <i class="fa-solid fa-angle-down"
+                                        style="color: #000000; font-size: 12px;"></i>
+                                </button>
+
+                                <!-- Nested Dropdown for Job Grids -->
+                                <div id="pages-special-menu"
+                                    class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
+                                    <ul class="py-2">
+                                        <li>
+                                            <a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Coming Soon</a>
+                                        </li>
+                                        <li><a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                maintainence</a></li>
+
+                                        <li><a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                404!</a></li>
+                                        <li><a href="/src/specialPages/404.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Thank you</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Link -->
+                <a href="/src/specialPages/404.html"
+                    class="text-gray-700 hover:text-gray-900 font-medium">Contact</a>
+
             </div>
-          </div>
-
-          <!-- Contact Link -->
-          <a href="/src/specialPages/404.html" class="text-gray-700 hover:text-gray-900 font-medium">Contact</a>
-
-        </div>
-        <div class="flex items-center justify-between w-60 space-x-4 ">
+            <div class="flex items-center justify-between w-60 space-x-4 ">
 
 
-          <!-- Search Bar centered -->
-          <div class="relative ">
-            <input type="text" placeholder="Search..."
-              class="py-1 pl-6 pr-16 text-s  text-gray-600 bg-white border rounded-full focus:outline-none focus:ring focus:ring-gray-200 w-full" />
-            <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd"
-                  d="M12.9 14.32a8 8 0 1 1 1.414-1.414l4.387 4.387a1 1 0 0 1-1.414 1.414l-4.387-4.387zM8 14a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
-                  clip-rule="evenodd"></path>
-              </svg>
-            </span>
-          </div>
+                <!-- Search Bar centered -->
+                <div class="relative ">
+                    <input type="text" placeholder="Search..."
+                        class="py-1 pl-6 pr-16 text-s  text-gray-600 bg-white border rounded-full focus:outline-none focus:ring focus:ring-gray-200 w-full" />
+                    <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M12.9 14.32a8 8 0 1 1 1.414-1.414l4.387 4.387a1 1 0 0 1-1.414 1.414l-4.387-4.387zM8 14a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                </div>
 
-          <!-- Avatar Button between search and menu button -->
-          <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar"
-            class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600">
-            <img class="w-10 h-8 rounded-full" src="/src/assets/homep/05.a7ab2c82813cb95da9d6.jpg" alt="user photo">
-          </button>
-        </div>
-      </div>
-
-
-
-      <!-- Mobile Menu Toggle -->
-      <div class="flex items-center justify-between w-full space-x-4 lg:hidden">
-        <!-- Search Bar centered -->
-        <div class="relative w-[35%] ">
-          <input type="text" placeholder="Search..."
-            class="py-2 pl-4 pl-10 text-gray-600 bg-white border rounded-full focus:outline-none focus:ring focus:ring-gray-200 w-full" />
-          <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                d="M12.9 14.32a8 8 0 1 1 1.414-1.414l4.387 4.387a1 1 0 0 1-1.414 1.414l-4.387-4.387zM8 14a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </span>
+                <!-- Avatar Button between search and menu button -->
+                <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar"
+                    class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600">
+                    <img class="w-10 h-8 rounded-full" src="/src/assets/homep/05.a7ab2c82813cb95da9d6.jpg"
+                        alt="user photo">
+                </button>
+            </div>
         </div>
 
-        <!-- Avatar Button between search and menu button -->
-        <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar"
-          class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600">
-          <img class="w-8 h-8 rounded-full" src="/src/assets/homep/05.a7ab2c82813cb95da9d6.jpg" alt="user photo">
-        </button>
 
-        <!-- Menu Button (Three dots) on the right -->
-        <button id="menuToggle" class="text-gray-700 hover:text-gray-900 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-            </path>
-          </svg>
-        </button>
-      </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="flex items-center justify-between w-full space-x-4 lg:hidden">
+            <!-- Search Bar centered -->
+            <div class="relative w-[35%] ">
+                <input type="text" placeholder="Search..."
+                    class="py-2 pl-4 text-gray-600 bg-white border rounded-full focus:outline-none focus:ring focus:ring-gray-200 w-full" />
+                <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M12.9 14.32a8 8 0 1 1 1.414-1.414l4.387 4.387a1 1 0 0 1-1.414 1.414l-4.387-4.387zM8 14a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </span>
+            </div>
+
+            <!-- Avatar Button between search and menu button -->
+            <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar"
+                class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600">
+                <img class="w-8 h-8 rounded-full" src="/src/assets/homep/05.a7ab2c82813cb95da9d6.jpg"
+                    alt="user photo">
+            </button>
+
+            <!-- Menu Button (Three dots) on the right -->
+            <button id="menuToggle" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
 
 
     </nav>
@@ -324,265 +363,265 @@
     <!-- Mobile Menu -->
 
     <div id="mobileMenu" class="lg:hidden hidden absolute top-14 left-0 w-full bg-white shadow-md z-10">
-      <div class="flex justify-between py-2">
-        <a href="/index.html" class="menu-item px-4 py-2 text-gray-700 hover:bg-gray-100"
-          data-target="homeDropdown">Home</a>
-        <a href="#" class="menu-item px-4 py-2 text-gray-700 hover:bg-gray-100" data-target="jobsDropdown">Jobs <i
-            class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i></a>
-        <a href="#" class="menu-item px-4 py-2 text-gray-700 hover:bg-gray-100" data-target="pagesDropdown">Pages <i
-            class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i></a>
-        <a href="coming-soon.html" target="_blank"
-          class="menu-item px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        <div class="flex justify-between py-2">
+            <a href="/index.html" class="menu-item px-4 py-2 text-gray-700 hover:bg-gray-100"
+                data-target="homeDropdown">Home</a>
+            <a href="#" class="menu-item px-4 py-2 text-gray-700 hover:bg-gray-100" data-target="jobsDropdown">Jobs
+                <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i></a>
+            <a href="#" class="menu-item px-4 py-2 text-gray-700 hover:bg-gray-100"
+                data-target="pagesDropdown">Pages <i class="fa-solid fa-angle-down"
+                    style="color: #000000; font-size: 12px;"></i></a>
+            <a href="coming-soon.html" target="_blank"
+                class="menu-item px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
 
-      </div>
+        </div>
     </div>
     <div>
-      <div id="jobsDropdown"
-        class="submenu hidden bg-white border w-full border-gray-200 shadow-lg rounded-md mt-2 w-full z-20">
-        <ul class="" style="margin:40px; margin-top: 6.5rem;">
-          <li><a href="/src/jobs/jobCategories.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
-              Categories </a></li>
-          <li class="relative">
+        <div id="jobsDropdown"
+            class="submenu hidden bg-white border border-gray-200 shadow-lg rounded-md mt-2 w-full z-20">
+            <ul class="" style="margin:40px; margin-top: 6.5rem;">
+                <li><a href="/src/jobs/jobCategories.html"
+                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job Categories </a></li>
+                <li class="relative group">
+                    <!-- Job Grids -->
+                    <a href="#" id="job-grids-toggle" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                        grids</a>
+                    
+                </li>
+                <li class="relative group">
+                    <a href="#" id="job-lists-toggle" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                        lists</a>
 
-            <!--Job Grids -->
-            <a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job grids </a>
+                </li>
+                <li class="relative group">
+                    <a href="#" id="job-detail-toggle" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                        Details</a>
+                </li>
+                <li><a href="/src/jobs/jobApply.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                        Apply </a></li>
+                <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                        Post </a></li>
+                <li><a href="/src/specialPages/404.html"
+                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Career </a></li>
 
-          </li>
-          <li class="relative">
-            <a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job lists </a>
+            </ul>
+        </div>
+        <div id="pagesDropdown"
+            class="submenu hidden bg-white border border-gray-200 shadow-lg rounded-md mt-2 w-full z-20">
+            <ul class="py-2" style="margin:40px; margin-top: 5.7rem;">
+                <li><a href="/src/specialPages/404.html"
+                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About us</a> </a></li>
+                <li><a href="/src/specialPages/404.html"
+                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Services</a> </a></li>
+                <li><a href="/src/specialPages/404.html"
+                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Pricing</a> </a></li>
+                <li class="relative">
+                    <button id="pagess-employee-toggle"
+                        class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                        Employee <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                    </button>
+                </li>
+                <li class="relative">
+                    <button id="pagess-candidates-toggle"
+                        class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                        Candidates <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                    </button>
 
-            <!-- Nested Dropdown for Job Lists -->
+                </li>
+                <li class="relative">
+                    <button id="pagess-helpcenter-toggle"
+                        class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                        Helpcenter <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                    </button>
 
-          </li>
-          <li class="relative">
-            <a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job Details
-            </a>
-
-            <!-- Nested Dropdown for Job Grids -->
-
-          </li>
-
-          <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job Apply
-            </a></li>
-          <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job Post </a>
-          </li>
-          <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Career </a>
-          </li>
-
-        </ul>
-      </div>
-      <div id="pagesDropdown"
-        class="submenu hidden bg-white border border-gray-200 shadow-lg rounded-md mt-2 w-full z-20">
-        <ul class="py-2" style="margin:40px; margin-top: 5.7rem;">
-          <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About us</a>
-            </a></li>
-          <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Services</a>
-            </a></li>
-          <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Pricing</a>
-            </a></li>
-          <li class="relative">
-            <button id="pagess-employee-toggle"
-              class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
-              Employee <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
-            </button>
-          </li>
-          <li class="relative">
-            <button id="pagess-candidates-toggle"
-              class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
-              Candidates <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
-            </button>
-
-          </li>
-          <li class="relative">
-            <button id="pagess-helpcenter-toggle"
-              class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
-              Helpcenter <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
-            </button>
-
-          </li>
-          <li class="relative">
-            <button id="pagess-blogs-toggle"
-              class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
-              Blogs <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
-            </button>
+                </li>
+                <li class="relative">
+                    <button id="pagess-blogs-toggle"
+                        class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                        Blogs <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                    </button>
 
 
-          </li>
-          <li class="relative">
-            <button id="pagess-auth-toggle"
-              class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
-              Auth Pages <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
-            </button>
+                </li>
+                <li class="relative">
+                    <button id="pagess-auth-toggle"
+                        class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                        Auth Pages <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                    </button>
 
 
-          </li>
-          <li class="relative">
-            <button id="pagess-utility-toggle"
-              class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
-              Utility <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
-            </button>
+                </li>
+                <li class="relative">
+                    <button id="pagess-utility-toggle"
+                        class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                        Utility <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                    </button>
 
 
-          </li>
-          <li class="relative">
-            <button id="pagess-special-toggle"
-              class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
-              Special <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
-            </button>
-          </li>
+                </li>
+                <li class="relative">
+                    <button id="pagess-special-toggle"
+                        class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                        Special <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                    </button>
+                </li>
 
-          <li>
-            <div id="pagess-employee-menu"
-              class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
-              style="
+                <li>
+                    <div id="pagess-employee-menu"
+                        class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
+                        style="
                 position: absolute;
                 left: 0; padding-left: 60px;">
-              <ul class="py-2">
-                <li>
-                  <a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    Employers</a>
+                        <ul class="py-2">
+                            <li>
+                                <a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Employers</a>
+                            </li>
+                            <li><a href="employee-detail.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Employer details</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li><a href="employee-detail.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    Employer details</a></li>
-              </ul>
-            </div>
-          </li>
 
 
-          <li>
-            <div id="pagess-candidates-menu"
-              class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
-              style="
+                <li>
+                    <div id="pagess-candidates-menu"
+                        class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
+                        style="
                 position: absolute;
                 left: 0; padding-left: 60px;">
-              <ul class="py-2">
-                <li>
-                  <a href="candidate.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    Candidates</a>
+                        <ul class="py-2">
+                            <li>
+                                <a href="candidate.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Candidates</a>
+                            </li>
+                            <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Candidate Profile</a></li>
+
+                            <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Profile Setting</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    Candidate Profile</a></li>
-
-                <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    Profile Setting</a></li>
-              </ul>
-            </div>
-          </li>
 
 
-          <li>
-            <div id="pagess-helpcenter-menu"
-              class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
-              style="
+                <li>
+                    <div id="pagess-helpcenter-menu"
+                        class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
+                        style="
                     position: absolute;
                     left: 0; padding-left: 60px;">
-              <ul class="py-2">
-                <ul class="py-2">
-                  <li>
-                    <a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                      Overview</a>
-                  </li>
-                  <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                      FAQs</a></li>
+                        <ul class="py-2">
+                            <ul class="py-2">
+                                <li>
+                                    <a href="coming-soon.html"
+                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                        Overview</a>
+                                </li>
+                                <li><a href="coming-soon.html"
+                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                        FAQs</a></li>
 
-                  <li><a href="guides.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                      Guides</a></li>
-                  <li><a href="support.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
-                      Support</a></li>
-                </ul>
-              </ul>
-            </div>
-          </li>
+                                <li><a href="guides.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                        Guides</a></li>
+                                <li><a href="support.html"
+                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                        Support</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </li>
 
 
-          <li>
-            <div id="pagess-blogs-menu"
-              class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
-              style="
+                <li>
+                    <div id="pagess-blogs-menu"
+                        class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
+                        style="
                     position: absolute;
                     left: 0; padding-left: 60px;">
-              <ul class="py-2">
-                <li>
-                  <a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    Blog</a>
+                        <ul class="py-2">
+                            <li>
+                                <a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Blog</a>
+                            </li>
+                            <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Blog details </a></li>
+
+
+                        </ul>
+                    </div>
                 </li>
-                <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    Blog details </a></li>
 
 
-              </ul>
-            </div>
-          </li>
-
-
-          <li>
-            <div id="pagess-auth-menu"
-              class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
-              style="
+                <li>
+                    <div id="pagess-auth-menu"
+                        class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
+                        style="
                     position: absolute;
                     left: 0; padding-left: 60px;">
-              <ul class="py-2">
-                <li>
-                  <a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    Login</a>
+                        <ul class="py-2">
+                            <li>
+                                <a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Login</a>
+                            </li>
+                            <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Sign up</a></li>
+
+                            <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Forgot password</a></li>
+                        </ul>
+
+                    </div>
                 </li>
-                <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    Sign up</a></li>
-
-                <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    Forgot password</a></li>
-              </ul>
-
-            </div>
-          </li>
 
 
-          <li>
-            <div id="pagess-utility-menu"
-              class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
-              style="
+                <li>
+                    <div id="pagess-utility-menu"
+                        class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
+                        style="
                     position: absolute;
                     left: 0; padding-left: 60px;">
-              <ul class="py-2">
-                <li>
-                  <a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    Terms of Services</a>
+                        <ul class="py-2">
+                            <li>
+                                <a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Terms of Services</a>
+                            </li>
+                            <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Policy</a></li>
+
+
+                        </ul>
+                    </div>
                 </li>
-                <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    Policy</a></li>
 
 
-              </ul>
-            </div>
-          </li>
-
-
-          <li>
-            <div id="pagess-special-menu"
-              class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
-              style="
+                <li>
+                    <div id="pagess-special-menu"
+                        class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
+                        style="
                     position: absolute;
                     left: 0; padding-left: 60px;">
-              <ul class="py-2">
-                <li>
-                  <a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    Coming Soon</a>
-                </li>
-                <li><a href="maintainence.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    maintainence</a></li>
+                        <ul class="py-2">
+                            <li>
+                                <a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Coming Soon</a>
+                            </li>
+                            <li><a href="maintainence.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    maintainence</a></li>
 
-                <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    404!</a></li>
-                <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                    Thank you</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
+                            <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    404!</a></li>
+                            <li><a href="coming-soon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Thank you</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 
-  </div>
+</div>
   <section class="relative table w-full py-36 bg-[] bg-top bg-no-repeat bg-cover">
     </div>
     <div class="absolute inset-0 bg-emerald-900/90"></div>
@@ -785,6 +824,8 @@
     const menuButtons = document.querySelectorAll('.menu-item');
     const subMenus = document.querySelectorAll('.submenu');
     const submenuLinks = document.querySelectorAll('.submenu a');
+    const toggleButton = document.getElementById('job-grids-toggle');
+    const subMenu = document.getElementById('job-grids-menu');
 
     // Function to close all submenus
     function closeAllSubmenus() {
@@ -818,6 +859,28 @@
             toggleSubmenu(targetId);
         });
     });
+    function closeOtherSubmenus(currentMenu) {
+        const allSubMenus = document.querySelectorAll('.sub-menu'); // assuming all submenus have this class
+        allSubMenus.forEach(menu => {
+            if (menu !== currentMenu) {
+                menu.classList.add('opacity-0', 'invisible');
+                menu.classList.remove('opacity-100', 'visible');
+            }
+        });
+    }
+
+    // Toggle visibility of the Job Grids menu
+    toggleButton.addEventListener('click', function (e) {
+        e.preventDefault();
+        // Toggle visibility of the menu
+        subMenu.classList.toggle('opacity-0');
+        subMenu.classList.toggle('invisible');
+        subMenu.classList.toggle('opacity-100');
+        subMenu.classList.toggle('visible');
+
+        // Close other submenus if open
+        closeOtherSubmenus(subMenu);
+    });
 
     // Close the sub-menu if clicking outside of it
     document.addEventListener('click', function (event) {
@@ -828,16 +891,13 @@
     });
 
     // Toggle for "Job Grids"
-    // Toggle for "Job Grids"
+
     const jobGridsToggle = document.getElementById('job-grids-toggle');
     const jobGridsMenu = document.getElementById('job-grids-menu');
 
     jobGridsToggle.addEventListener('click', function (e) {
         e.preventDefault();
-        // Toggle visibility of the Job Grids menu
-        jobGridsMenu.classList.toggle('opacity-0');
-        jobGridsMenu.classList.toggle('invisible');
-        // Close other submenus if open
+        jobGridsMenu.classList.toggle('hidden');
         closeOtherSubmenus(jobGridsMenu);
     });
 
@@ -847,22 +907,17 @@
 
     jobListsToggle.addEventListener('click', function (e) {
         e.preventDefault();
-        // Toggle visibility of the Job Lists menu
-        jobListsMenu.classList.toggle('opacity-0');
-        jobListsMenu.classList.toggle('invisible');
-        // Close other submenus if open
+        jobListsMenu.classList.toggle('hidden');
         closeOtherSubmenus(jobListsMenu);
     });
-    // Toggle for "Job Lists"
+
+    // Toggle for "Job Details"
     const jobDetailToggle = document.getElementById('job-detail-toggle');
     const jobDetailMenu = document.getElementById('job-detail-menu');
 
     jobDetailToggle.addEventListener('click', function (e) {
         e.preventDefault();
-        // Toggle visibility of the Job Lists menu
-        jobDetailMenu.classList.toggle('opacity-0');
-        jobDetailMenu.classList.toggle('invisible');
-        // Close other submenus if open
+        jobDetailMenu.classList.toggle('hidden');
         closeOtherSubmenus(jobDetailMenu);
     });
 
@@ -981,10 +1036,10 @@
     }
     // Toggle for "Job Grids"
     // Toggle for "Job Grids"
-    const jobsGridsToggle = document.getElementById('jobs-grids-toggle');
-    const jobsGridsMenu = document.getElementById('jobs-grids-menu');
+    // const jobsGridsToggle = document.getElementById('jobs-grids-toggle');
+    // const jobsGridsMenu = document.getElementById('jobs-grids-menu');
 
-    jobsGridsToggle.addEventListener('click', function (e) {
+    jobGridsToggle.addEventListener('click', function (e) {
         e.preventDefault();
         // Toggle visibility of the Job Grids menu
         jobsGridsMenu.classList.toggle('opacity-0');
@@ -997,7 +1052,7 @@
     const jobsListsToggle = document.getElementById('jobs-lists-toggle');
     const jobsListsMenu = document.getElementById('jobs-lists-menu');
 
-    jobsListsToggle.addEventListener('click', function (e) {
+    jobListsToggle.addEventListener('click', function (e) {
         e.preventDefault();
         // Toggle visibility of the Job Lists menu
         jobsListsMenu.classList.toggle('opacity-0');
@@ -1009,7 +1064,7 @@
     const jobsDetailToggle = document.getElementById('jobs-detail-toggle');
     const jobsDetailMenu = document.getElementById('jobs-detail-menu');
 
-    jobsDetailToggle.addEventListener('click', function (e) {
+    jobDetailToggle.addEventListener('click', function (e) {
         e.preventDefault();
         // Toggle visibility of the Job Lists menu
         jobsDetailMenu.classList.toggle('opacity-0');
