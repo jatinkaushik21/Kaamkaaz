@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-cover-image {
+            background-image: url('Assests/images/about-us-img/daesktop.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Maintenance Section -->
+    <section class="md:h-screen py-36 flex items-center justify-center relative overflow-hidden bg-cover-image bg-no-repeat bg-center bg-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+        <div class="container relative z-10 text-center">
+            <!-- Logo -->
+            <div class="grid grid-cols-1">
+                <a href="homepage.html">
+                    <img src='Assests/images/about-us-img/6.png' class="mx-auto h-10" alt="Logo">
+                </a>
+                <h1 class="text-white mb-6 mt-8 md:text-5xl text-3xl font-bold">We Are Back Soon...</h1>
+                <p class="text-white/70 text-lg max-w-xl mx-auto">Find Jobs, Employment & Career Opportunities. Some of the companies we've helped recruit excellent applicants over the years.</p>
+            </div>
+
+            <!-- Timer -->
+            <div class="grid grid-cols-1 mt-2">
+                <div class="text-center">
+                    <span id="maintenance" class="timer text-white text-[56px] tracking-[1px]">59:59</span>
+                    <span class="block text-base font-semibold uppercase text-white">Minutes</span>
+                </div>
+            </div>
+
+            <!-- Subscribe Form -->
+            <div class="grid grid-cols-1 mt-8">
+                <div class="text-center subcribe-form">
+                    <form class="relative mx-auto max-w-xl" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                        <input type="email" id="subemail" name="name" class="pt-4 pr-40 pb-4 pl-6 w-full h-[50px] outline-none text-black dark:text-white rounded-full bg-white/70 dark:bg-slate-900/70 border dark:border-gray-700" placeholder="Enter your email id..">
+                        <button type="submit" class="absolute top-[2px] right-[3px] h-[46px] w-[30%] bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white rounded-full">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timer Script -->
+    <script>
+        let seconds = 3599;
+
+        function updateTimer() {
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = seconds % 60;
+            document.getElementById('maintenance').textContent = `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+
+            if (seconds > 0) {
+                seconds--;
+                setTimeout(updateTimer, 1000);
+            }
+        }
+        updateTimer();
+    </script>
+</body>
+
+</html>
