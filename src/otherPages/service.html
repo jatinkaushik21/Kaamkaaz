@@ -33,13 +33,13 @@
 
                 <!-- Jobs with Dropdown -->
                 <div class="group relative" style="margin-right: 40px;">
-                    <li class="text-gray-700 list-none hover:text-gray-900 font-medium" id="job-grids-toggle">Jobs
+                    <li class="text-gray-700 list-none hover:text-gray-900 font-medium" >Jobs
                         <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
                     </li>
 
 
                     <!-- Main Dropdown -->
-                    <div id="job-grids-menu"
+                    <div
                         class="absolute left-0 mt-0.5 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-10">
                         <ul class="py-2">
 
@@ -53,7 +53,7 @@
                             <!-- Job Grids with Nested Dropdown (opens on click) -->
                             <li class="relative">
                                 <a href="/src/jobs/jobGrid.html"
-                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100" id="job-grids-toggle">Job
                                     Grids</a>
 
                             </li>
@@ -61,14 +61,14 @@
                             <!-- Job Lists with Nested Dropdown (opens on click) -->
                             <li class="relative">
                                 <a href="/src/jobs/jobList.html"
-                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100" id="job-lists-toggle">Job
                                     lists</a>
 
                             </li>
 
                             <li class="relative">
                                 <a href="/src/jobs/jobDetail.html"
-                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100" id="job-detail-toggle">Job
                                     Detail</a>
 
                             </li>
@@ -388,17 +388,17 @@
                         class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job Categories </a></li>
                 <li class="relative group">
                     <!-- Job Grids -->
-                    <a href="/src/jobs/jobGrid.html" id="job-grids-toggle" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                    <a href="/src/jobs/jobGrid.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
                         grids</a>
                     
                 </li>
                 <li class="relative group">
-                    <a href="/src/jobs/jobList.html" id="job-lists-toggle" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                    <a href="/src/jobs/jobList.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
                         lists</a>
 
                 </li>
                 <li class="relative group">
-                    <a href="/src/jobs/jobDetail.html" id="job-detail-toggle" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                    <a href="/src/jobs/jobDetail.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
                         Details</a>
                 </li>
                 <li><a href="/src/jobs/jobApply.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
@@ -1029,15 +1029,6 @@
             // Close other submenus if open
             closeOtherSubmenus(subMenu);
         });
-
-        // Close the sub-menu if clicking outside of it
-        document.addEventListener('click', function (event) {
-            if (!toggleButton.contains(event.target) && !subMenu.contains(event.target)) {
-                subMenu.classList.add('opacity-0', 'invisible');
-                subMenu.classList.remove('opacity-100', 'visible');
-            }
-        });
-
         // Toggle for "Job Grids"
 
         const jobGridsToggle = document.getElementById('job-grids-toggle');
@@ -1197,8 +1188,8 @@
         });
 
         // Toggle for "Job Lists"
-        const jobsListsToggle = document.getElementById('jobs-lists-toggle');
-        const jobsListsMenu = document.getElementById('jobs-lists-menu');
+        // const jobsListsToggle = document.getElementById('jobs-lists-toggle');
+        // const jobsListsMenu = document.getElementById('jobs-lists-menu');
 
         jobListsToggle.addEventListener('click', function (e) {
             e.preventDefault();
@@ -1209,8 +1200,8 @@
             closeOtherSubmenus(jobsListsMenu);
         });
         // Toggle for "Job Lists"
-        const jobsDetailToggle = document.getElementById('jobs-detail-toggle');
-        const jobsDetailMenu = document.getElementById('jobs-detail-menu');
+        // const jobsDetailToggle = document.getElementById('jobs-detail-toggle');
+        // const jobsDetailMenu = document.getElementById('jobs-detail-menu');
 
         jobDetailToggle.addEventListener('click', function (e) {
             e.preventDefault();
