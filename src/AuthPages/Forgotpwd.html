@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
     <title>Document</title>
-</head>
-<body>
-    <h1>forgot password page here</h1>
-    <a href="/index.html">HOME</a>
+    </head>
+    <body class="bg-cover bg-center h-screen" style="background-image: url('image.jpg');">
+    <div class="flex items-center justify-start h-full bg-black bg-opacity-50">
+
+         <!--<div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md ml-36">-->
+            
+    
+        <!-- Container -->
+    <!--<div class="flex flex-col lg:flex-row  items-center ">-->
+       
+ <!-- reset your passord in left of destop, centered for mobile -->
+ <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full lg:mr-8 lg:max-w-md ml-36">
+    <!-- Logo and Title -->
+    <div class="text-center mb-6">
+        <img src="download.png" alt="Jobstack Logo" class="mx-auto mb-3 w-18 h-6"> <!-- Replace with your logo -->
+        </div>
+        <!-- for reset-->
+        <div class="text-around" >
+            <h1 class="text-1xl font-semibold">Reset Your Password</h1>
+        </div>
+             <br>
+             <div class=" text-around ">
+                <h1 class="text-1xl text-gray-700"> Please enter your emai address. your will receive a link to create a new password via email.</h1>
+             </div>
+             <br>
+             <!--form-->
+                <form action="#" method="POST">
+                    <!-- Email Address -->
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                    </div>
+                        <!-- Submit Button -->
+                <button type="submit" class="w-full bg-green-700 text-white py-2 px-4 rounded-md hover:bg-green-700 focus:ring-2 focus:ring-green-600 focus:ring-opacity-50">Send</button>
+           
+                    <!-- Sign in Option -->
+            <div p class="mt-4 text-center">
+                <span class="text-sm text-gray-500">Remenber your password? </span>
+                <a href="/src/AuthPages/Login.html"  span class="text-black-700  hover:underline">Sign in</a>
+                </p>
+            </div>
+    </div>
+</form>
+    </div>
 </body>
 </html>

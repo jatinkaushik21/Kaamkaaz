@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobstack - Sign Up</title>
+  <link rel="stylesheet" href="/src/output.css">
 </head>
-<body>
-    <h1>sign up page here</h1>
-    <a href="/index.html">HOME</a>
+<body class="bg-cover bg-center h-screen" style="background-image: url('image.jpg');">
+  
+  <div class="flex items-center justify-start h-full bg-black bg-opacity-50">
+    <!-- Sign-up Form Container -->
+    <div class="bg-white rounded-lg shadow-lg p-8  ml-36">
+      <!-- Logo -->
+      <div class="text-center mb-6">
+        <img src="download.png" alt="Jobstack Logo" class="mx-auto w-18  h-6">
+      </div>
+
+      <h2 class="text-2xl font-semibold text-around mb-4">Signup</h2>
+
+      <!-- Sign-up Form -->
+      <form>
+        <!-- Name Field -->
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Your Name:</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Name">
+        </div>
+
+        <!-- Email Field -->
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email Address:</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="name@example.com">
+        </div>
+
+        <!-- Password Field -->
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password:</label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Password">
+        </div>
+
+        <!-- Terms and Conditions -->
+        <div class="mb-4">
+          <input type="checkbox" id="terms" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+          <label for="terms" class="ml-2 text-sm text-gray-900">I Accept <a href="/src/Utility/TermsAndServices.html" class="text-green-700 hover:underline">Terms And Condition</a></label>
+        </div>
+
+        <!-- Register Button -->
+        <div class="mb-4">
+          <button class="bg-green-700 hover:bg-green-700 text-white font-bold py-2 px-4 w-full rounded focus:outline-none focus:shadow-outline" type="button">
+            Register
+          </button>
+        </div>
+
+        <!-- Already have an account -->
+        <div p class=" mt-3 text-center">
+          <span class="text-gray-600">Already have an account?   </span>
+          <a href="/src/AuthPages/Login.html"  span class="text-black-500 hover:underline text-1xl font-semibold">Sign in </a>
+          </p>
+        </div>
+      </form>
+
+      <!-- Footer -->
+      <p class="text-center text-sm text-gray-500 mt-6">&copy; 2024 Jobstack. Designed by Shreethemes.</p>
+    </div>
+  </div>
+
 </body>
 </html>
