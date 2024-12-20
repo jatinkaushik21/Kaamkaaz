@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coming Soon</title>
+    <script src="/src/output.css"></script>
+    <style>
+        /* Fully blurred, solid circle */
+        .blur-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            /* Adjust size as needed */
+            height: 120px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.4);
+            /* Adjust opacity as needed */
+            backdrop-filter: blur(20px);
+            z-index: 0;
+            pointer-events: none;
+        }
+        .bg-cover-image {
+            background-image: url('/src/assets/comingSoon/daesktop.jpg');
+        }
+    </style>
+
+
 </head>
+
 <body>
-    <h1>coming soon page here</h1>
-    <a href="/index.html"></a>
+    <!-- Coming Soon Section -->
+    <section
+        class="md:h-screen py-36 flex items-center justify-center relative overflow-hidden bg-cover-image bg-no-repeat bg-center bg-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
+        <div class="container-fluid relative z-10">
+            <div class="grid grid-cols-1">
+                <div class="flex flex-col min-h-screen justify-center md:px-10 py-10 px-4">
+                    <!-- Logo -->
+                    <div class="text-center mb-10">
+                        <a href="homepage.html">
+                            <img src="/src/assets/comingSoon/6.png" class="mx-auto h-10" alt="Logo">
+                        </a>
+                    </div>
+
+                    <!-- Title and Countdown -->
+                    <div class="title-heading text-center">
+                        <h1 class="text-white mt-3 mb-6 md:text-5xl text-3xl font-bold">We Are Coming Soon...</h1>
+                        <p class="text-white/70 text-lg max-w-xl mx-auto">Find Jobs, Employment & Career Opportunities.
+                            Some of the companies we've helped recruit excellent applicants over the years.</p>
+
+                        <!-- Countdown Timer -->
+                        <div id="countdown" class="mt-10">
+                            <ul class="list-none inline-block text-white text-center relative">
+                                <li class="count-number inline-block m-4 mr-12 relative">
+                                    <div class="blur-circle"></div>
+                                    <span id="days" class="text-[48px] block relative z-10">00</span>
+                                    <p class="count-head relative z-10">Days</p>
+                                </li>
+                                <li class="count-number inline-block m-4 mr-16 relative">
+                                    <div class="blur-circle"></div>
+                                    <span id="hours" class="text-[48px] block relative z-10">00</span>
+                                    <p class="count-head relative z-10">Hours</p>
+                                </li>
+                                <li class="count-number inline-block m-4 mr-16 relative">
+                                    <div class="blur-circle"></div>
+                                    <span id="mins" class="text-[48px] block relative z-10">00</span>
+                                    <p class="count-head relative z-10">Mins</p>
+                                </li>
+                                <li class="count-number inline-block m-4 mr-16 relative">
+                                    <div class="blur-circle"></div>
+                                    <span id="secs" class="text-[48px] block relative z-10">00</span>
+                                    <p class="count-head relative z-10">Secs</p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="text-center mt-10">
+                        <p class="mb-0 text-slate-400 font-medium">© <span id="year"></span> Jobstack. Design with
+                            <i class="mdi mdi-heart text-red-600"></i> by
+                            <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer Script -->
+    <script>
+        const targetDate = new Date('Dec 25, 2025 16:37:52').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeDiff = targetDate - now;
+
+            if (timeDiff > 0) {
+                const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+                // Update the HTML elements with the countdown values
+                document.getElementById('days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('mins').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('secs').textContent = seconds.toString().padStart(2, '0');
+            } else {
+                // If the countdown ends, display a message
+                document.getElementById('countdown').textContent = "We are live!";
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Set current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
+
 </html>
