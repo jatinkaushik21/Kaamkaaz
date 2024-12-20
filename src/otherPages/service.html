@@ -1017,49 +1017,6 @@
             });
         }
 
-        // Toggle visibility of the Job Grids menu
-        toggleButton.addEventListener('click', function (e) {
-            e.preventDefault();
-            // Toggle visibility of the menu
-            subMenu.classList.toggle('opacity-0');
-            subMenu.classList.toggle('invisible');
-            subMenu.classList.toggle('opacity-100');
-            subMenu.classList.toggle('visible');
-
-            // Close other submenus if open
-            closeOtherSubmenus(subMenu);
-        });
-        // Toggle for "Job Grids"
-
-        const jobGridsToggle = document.getElementById('job-grids-toggle');
-        const jobGridsMenu = document.getElementById('job-grids-menu');
-
-        jobGridsToggle.addEventListener('click', function (e) {
-            e.preventDefault();
-            jobGridsMenu.classList.toggle('hidden');
-            closeOtherSubmenus(jobGridsMenu);
-        });
-
-        // Toggle for "Job Lists"
-        const jobListsToggle = document.getElementById('job-lists-toggle');
-        const jobListsMenu = document.getElementById('job-lists-menu');
-
-        jobListsToggle.addEventListener('click', function (e) {
-            e.preventDefault();
-            jobListsMenu.classList.toggle('hidden');
-            closeOtherSubmenus(jobListsMenu);
-        });
-
-        // Toggle for "Job Details"
-        const jobDetailToggle = document.getElementById('job-detail-toggle');
-        const jobDetailMenu = document.getElementById('job-detail-menu');
-
-        jobDetailToggle.addEventListener('click', function (e) {
-            e.preventDefault();
-            jobDetailMenu.classList.toggle('hidden');
-            closeOtherSubmenus(jobDetailMenu);
-        });
-
         const pagesemployeeToggle = document.getElementById('pages-employee-toggle');
         const pagesemployeeMenu = document.getElementById('pages-employee-menu');
 
@@ -1173,45 +1130,6 @@
                 }
             });
         }
-        // Toggle for "Job Grids"
-        // Toggle for "Job Grids"
-        // const jobsGridsToggle = document.getElementById('jobs-grids-toggle');
-        // const jobsGridsMenu = document.getElementById('jobs-grids-menu');
-
-        jobGridsToggle.addEventListener('click', function (e) {
-            e.preventDefault();
-            // Toggle visibility of the Job Grids menu
-            jobsGridsMenu.classList.toggle('opacity-0');
-            jobsGridsMenu.classList.toggle('invisible');
-            // Close other submenus if open
-            closeOtherSubmenus(jobsGridsMenu);
-        });
-
-        // Toggle for "Job Lists"
-        // const jobsListsToggle = document.getElementById('jobs-lists-toggle');
-        // const jobsListsMenu = document.getElementById('jobs-lists-menu');
-
-        jobListsToggle.addEventListener('click', function (e) {
-            e.preventDefault();
-            // Toggle visibility of the Job Lists menu
-            jobsListsMenu.classList.toggle('opacity-0');
-            jobsListsMenu.classList.toggle('invisible');
-            // Close other submenus if open
-            closeOtherSubmenus(jobsListsMenu);
-        });
-        // Toggle for "Job Lists"
-        // const jobsDetailToggle = document.getElementById('jobs-detail-toggle');
-        // const jobsDetailMenu = document.getElementById('jobs-detail-menu');
-
-        jobDetailToggle.addEventListener('click', function (e) {
-            e.preventDefault();
-            // Toggle visibility of the Job Lists menu
-            jobsDetailMenu.classList.toggle('opacity-0');
-            jobsDetailMenu.classList.toggle('invisible');
-            // Close other submenus if open
-            closeOtherSubmenus(jobsDetailMenu);
-        });
-
         const pagessemployeeToggle = document.getElementById('pagess-employee-toggle');
         const pagessemployeeMenu = document.getElementById('pagess-employee-menu');
 
