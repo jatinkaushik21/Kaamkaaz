@@ -2700,6 +2700,18 @@ video {
     margin-top: 40px;
   }
 
+  .sm\:ml-40 {
+    margin-left: 10rem;
+  }
+
+  .sm\:ml-\[40\] {
+    margin-left: 40;
+  }
+
+  .sm\:ml-36 {
+    margin-left: 9rem;
+  }
+
   .sm\:h-8 {
     height: 2rem;
   }
@@ -2720,8 +2732,16 @@ video {
     align-items: flex-start;
   }
 
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
+
   .sm\:gap-4 {
     gap: 1rem;
+  }
+
+  .sm\:p-14 {
+    padding: 3.5rem;
   }
 
   .sm\:px-8 {
