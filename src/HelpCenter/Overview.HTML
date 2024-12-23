@@ -677,86 +677,129 @@
       <h3 class="mb-4 text-2xl md:text-3xl font-semibold">Get Started</h3>
       <p class="text-slate-400 max-w-xl mx-auto">We are a huge marketplace dedicated to connecting great artists of all Jobstack with their fans and unique token collectors!</p>
       <div class="mt-8 flex justify-center">
-        <div class=" space-y-4">
-
-          <div class="mt-8" id="accordion">
-            <div class="relative shadow rounded-md overflow-hidden mt-4">
-                <button onclick="toggleAccordion(0)" class="flex justify-between items-center p-5 w-full font-medium text-left" id="accordion-header-1">
-                    <span>How does it work?</span>
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
-                    </svg>
+        
+        <div id="accordion-collapse" class="mt-6">
+            <!-- First accordion item -->
+            <div class="relative shadow  rounded-md overflow-hidden mt-4">
+              <h2 class="text-base font-medium">
+                <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-left" onclick="toggleAccordion(0)">
+                  <span>How does it work ?</span>
+                  <svg class="size-4 shrink-0 rotate-180 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
                 </button>
-                <div id="accordion-body-1" class="hidden p-5">
-                    <p class="text-gray-600">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                </div>
+              </h2>
+              <div class="p-5 accordion-content hidden">
+                <p class="text-slate-400 ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+              </div>
             </div>
-
-            <div class="relative shadow rounded-md overflow-hidden mt-4">
-                <button onclick="toggleAccordion(1)" class="flex justify-between items-center p-5 w-full font-medium text-left" id="accordion-header-2">
-                    <span>Do I need a designer to use Jobstack?</span>
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
-                    </svg>
+          
+            <!-- Second accordion item -->
+            <div class="relative shadow  rounded-md overflow-hidden mt-4">
+              <h2 class="text-base font-medium">
+                <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-left" onclick="toggleAccordion(1)">
+                  <span>Do I need a designer to use Jobstack ?</span>
+                  <svg class="size-4 shrink-0 rotate-180 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
                 </button>
-                <div id="accordion-body-2" class="hidden p-5">
-                    <p class="text-gray-600">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                </div>
+              </h2>
+              <div class="p-5 accordion-content hidden">
+                <p class="text-slate-400 ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+              </div>
             </div>
-            <div class="relative shadow rounded-md overflow-hidden mt-4">
-                <button onclick="toggleAccordion(2)" class="flex justify-between items-center p-5 w-full font-medium text-left" id="accordion-header-3">
-                    <span>What do I need to do to start selling ?</span>
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
-                    </svg>
+          
+            <!-- Third accordion item -->
+            <div class="relative shadow  rounded-md overflow-hidden mt-4">
+              <h2 class="text-base font-medium">
+                <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-left" onclick="toggleAccordion(2)">
+                  <span>What do I need to do to start selling ?</span>
+                  <svg class="size-4 shrink-0 rotate-180 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
                 </button>
-                <div id="accordion-body-3" class="hidden p-5">
-                    <p class="text-gray-600">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
-                </div>
+              </h2>
+              <div class="p-5 accordion-content hidden">
+                <p class="text-slate-400 ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+              </div>
             </div>
-        </div>
-        </div>
+          
+            <!-- Fourth accordion item -->
+            <div class="relative shadow  rounded-md overflow-hidden mt-4">
+              <h2 class="text-base font-medium">
+                <button type="button" class="flex justify-between items-center p-5 w-full font-medium text-left" onclick="toggleAccordion(3)">
+                  <span>What happens when I receive an order ?</span>
+                  <svg class="size-4 shrink-0 rotate-180 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+              </h2>
+              <div class="p-5 accordion-content hidden">
+                <p class="text-slate-400 ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+              </div>
+            </div>
+          </div>
+          
+          <script>
+            // Function to toggle accordion content visibility
+            function toggleAccordion(index) {
+              const content = document.querySelectorAll('.accordion-content');
+              const button = document.querySelectorAll('button svg');
+          
+              // Toggle the visibility of the clicked item
+              const currentContent = content[index];
+              const currentButton = button[index];
+          
+              currentContent.classList.toggle('hidden'); // Show or hide content
+              currentButton.classList.toggle('rotate-180'); // Rotate the icon
+          
+              // Optionally, close other accordion items
+              for (let i = 0; i < content.length; i++) {
+                if (i !== index) {
+                  content[i].classList.add('hidden');
+                  button[i].classList.remove('rotate-180');
+                }
+              }
+            }
+          </script>
       </div>
     </div>
   </section> 
-  <section class="relative md:pb-24 pb-16 overflow-hidden">
-
-             
-    <div class="container w-[90%] ml-0 sm:ml-[40px] lg:ml-[90px] mr-[10px]  ">
-        <div class="bg-white  p-6 lg:px-16 pb-[2.5rem] rounded-xl shadow-lg  relative overflow-hidden">
-            <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
-                <!-- Left Section -->
-                <div class="lg:col-span-8 md:col-span-7">
-                    <div class="text-center md:text-left">
-                        <h3 class="text-2xl font-semibold text-black  mb-4">Explore a job now!</h3>
-                        <p class="text-gray-500  max-w-xl">
-                            Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 30,000+ companies worldwide.
-                        </p>
+  <section class="relative md:pb-24 pb-16  overflow-hidden">
+    <div class="container-fluid md:mt-24 mt-16 mx-[3    0px]">
+        <div class="container">
+            <div class="grid grid-cols-1">
+                <div class="relative overflow-hidden py-10 rounded-xl shadow-lg">
+                    <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+                        <div class="lg:col-span-8 md:col-span-7">
+                            <div class="ltr:md:text-left rtl:md:text-right text-center relative z-1">
+                                <h3 class="text-2xl font-semibold text-black  mb-4">Explore a job now!</h3>
+                                <p class="text-slate-400 max-w-xl">Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 30,000+ companies worldwide.</p>
+                            </div>
+                        </div>
+    
+                        <div class="lg:col-span-4 md:col-span-5">
+                            <div class="ltr:text-right rtl:text-left relative z-1 ml-[60px]">
+                                <a href="/employer-detail" class="btn transition-all duration-500 bg-green-600 hover:bg-emerald-700 border-green-600  px-6 py-2 text-white rounded-md">Apply Now</a>
+                                <a href="/aboutus" class="btn transition-all duration-500 hover:bg-green-600 border-slate-300 border-[1px]  text-emerald-600 hover:text-white rounded-md ms-2 px-6 py-2">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="absolute -top-5 -start-5">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="lg:text-[150px] text-7xl text-black/5  ltr:-rotate-45 rtl:rotate-45" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                    </div>
+    
+                    <div class="absolute -bottom-5 -end-5">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="lg:text-[150px] text-7xl text-black/5  rtl:-rotate-90" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"></path></svg>
                     </div>
                 </div>
-                
-                <!-- Right Section with Buttons -->
-                <div class="lg:col-span-4 md:col-span-5">
-                    <div class="text-center md:text-right">
-                        <a href="/employer-detail" class="btn bg-emerald-600 hover:bg-emerald-700 border border-emerald-600 text-white rounded-md px-4 py-2">Apply Now</a>
-                        <a href="/aboutus" class="btn bg-emerald-600/5 hover:bg-emerald-600 border border-emerald-600/10 hover:border-emerald-600 text-emerald-600 hover:text-white rounded-md px-4 py-2 ml-2">Learn More</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Decorative Icons -->
-            <div class="absolute -top-5 -left-5">
-                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="lg:text-[150px] text-7xl text-black/5  ltr:-rotate-45 rtl:rotate-45" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
-            </div>
-
-            <div class="absolute -bottom-5 -right-5">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="lg:text-[150px] text-7xl text-black/5  rtl:-rotate-90" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"></path></svg>
             </div>
         </div>
     </div>
 </section>
   <!-- Footer -->
-  <footer class="relative bg-slate-900 ">
+  <footer class="relative bg-slate-900  px-20">
     <div class="container mx-auto py-12">
         <div class="grid grid-cols-1">
             <div class="relative">
@@ -767,10 +810,10 @@
                                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAAAYCAYAAADH9X5VAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjlFMDkzNEY3QUQxRjExRUQ4QkREQThFQTZFNEQwQTcxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjlFMDkzNEY4QUQxRjExRUQ4QkREQThFQTZFNEQwQTcxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OUUwOTM0RjVBRDFGMTFFRDhCRERBOEVBNkU0RDBBNzEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OUUwOTM0RjZBRDFGMTFFRDhCRERBOEVBNkU0RDBBNzEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7uuRVeAAAKQklEQVR42uxaC5RVZRX+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" class="" alt="">
                             </a>
                         </div>
-                        <div class="md:col-span-9">
+                        <div class="md:col-span-9 mb-14">
                             <ul class="list-disc footer-list text-center md:text-right space-x-3">
                                 <li class="inline-block">
-                                    <a href="/index" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium me-4">Home</a>
+                                    <a href="index.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium me-4">Home</a>
                                 </li>
                                 <li class="inline-block mt-[10px] md:mt-0">
                                     <a href="/services" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium me-4">How it works</a>
