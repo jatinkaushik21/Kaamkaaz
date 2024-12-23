@@ -629,10 +629,14 @@
     <div class="absolute inset-0 rounded-b-lg bg-emerald-600 opacity-90"></div>
     <div class="relative z-10 container mx-auto">
       <h3 class="mb-6 text-3xl md:text-4xl font-semibold text-white">Hello! <br> How can we help you?</h3>
-      <form class="relative mx-auto max-w-xl">
-        <input type="text" placeholder="Search your questions or topic..." class="w-full h-12 px-6 pr-40 rounded-full bg-white/70   shadow outline-none">
-        <button type="submit" class="absolute top-1 right-3 h-10 px-5 text-white bg-emerald-600 rounded-full">Search</button>
-      </form>
+      <div class="grid grid-cols-1 mt-8">
+        <div class="text-center subcribe-form">
+            <form class="relative mx-auto max-w-xl" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                <input type="email" id="subemail" name="name" class="pt-4 pr-40 pb-4 pl-6 w-full h-[50px] outline-none text-black  rounded-full bg-white/70  border " placeholder="Enter your email id..">
+                <button type="submit" class="absolute top-[2px] right-[3px] h-[46px] w-[20%] bg-emerald-600 hover:bg-emerald-700 border-emerald-600 hover:border-emerald-700 text-white rounded-full">Search</button>
+            </form>
+        </div>
+    </div>
     </div>
     <ul class="absolute bottom-5 w-full text-white text-sm flex justify-center">
       <li class="mx-2"><a href="/" class="hover:text-green-600">Jobstack</a></li>
