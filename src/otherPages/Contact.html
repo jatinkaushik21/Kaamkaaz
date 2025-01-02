@@ -3,10 +3,843 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/src/output.css">
 </head>
-<body>
-    <h1>contact page here</h1>
-    <a href="/index.html">HOME</a>
-</body>
-</html>
+<body class="bg-white min-h-screen flex items-center justify-center">
+    <header>
+    
+    <div>
+        
+        <div>
+                
+            <nav
+                class="bg-white fixed top-0 left-0 w-full h- z-50 py-2 px-2 sm:px-8 lg:px-[2rem] xl:px-[8.75rem] flex items-center justify-between shadow-sm">
+                <div class="flex">
+                    <div class="md:col-span-3">
+                        <a href="" class="flex justify-center md:justify-start focus:outline-none">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAAAYCAYAAADH9X5VAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkEyRjAyQzU2QUQxRjExRUQ5RTk5QUI2N0Y1MjkxMTNEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkEyRjAyQzU3QUQxRjExRUQ5RTk5QUI2N0Y1MjkxMTNEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QTJGMDJDNTRBRDFGMTFFRDlFOTlBQjY3RjUyOTExM0QiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QTJGMDJDNTVBRDFGMTFFRDlFOTlBQjY3RjUyOTExM0QiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5hiWshAAAKdklEQVR42uxbDXAV1RU+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"
+                                class="" alt="">
+                        </a>
+                    </div>
+                </div>
+    
+                <div class=" items-center space-x-8 p-2 relative hidden lg:flex"
+                    style="width:70%; justify-content: space-evenly;">
+                    <div style="display: flex; align-items: center; justify-content: center; margin-right:20px;">
+                        <!-- Home with Dropdown -->
+                        <div class="group relative" style="margin-right: 45px;">
+                            <a href="/index.html" class="text-gray-700 hover:text-gray-900 font-medium">Home </a>
+                        </div>
+    
+                        <!-- Jobs with Dropdown -->
+                        <div class="group relative" style="margin-right: 40px;">
+                            <li class="text-gray-700 list-none hover:text-gray-900 font-medium" >Jobs
+                                <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                            </li>
+    
+    
+                            <!-- Main Dropdown -->
+                            <div
+                                class="absolute left-0 mt-0.5 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 z-10">
+                                <ul class="py-2">
+    
+                                    <!-- Job Categories -->
+                                    <li>
+                                        <a href="/src/jobs/jobCategories.html"
+                                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                            Categories</a>
+                                    </li>
+    
+                                    <!-- Job Grids with Nested Dropdown (opens on click) -->
+                                    <li class="relative">
+                                        <a href="/src/jobs/jobGrid.html"
+                                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100" id="job-grids-toggle">Job
+                                            Grids</a>
+    
+                                    </li>
+    
+                                    <!-- Job Lists with Nested Dropdown (opens on click) -->
+                                    <li class="relative">
+                                        <a href="/src/jobs/jobList.html"
+                                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100" id="job-lists-toggle">Job
+                                            lists</a>
+    
+                                    </li>
+    
+                                    <li class="relative">
+                                        <a href="/src/jobs/jobDetail.html"
+                                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100" id="job-detail-toggle">Job
+                                            Detail</a>
+    
+                                    </li>
+                                    <li>
+                                        <a href="/src/jobs/jobApply.html"
+                                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                            Apply</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="/src/jobs/jobPost.html"
+                                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                            Post</a>
+                                    </li>
+                                    <li>
+                                        <a href="/src/jobs/career.html"
+                                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Career</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <!-- Pages with Dropdown -->
+                        <div class="group relative" style="margin-right: 40px;">
+                            <li class="text-gray-700 list-none hover:text-gray-900 font-medium">Pages <i
+                                    class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i></li>
+                            <div
+                                class="dropdown-content invisible absolute left-0 mt-0.5 w-48 bg-white border border-gray-200 shadow-lg rounded-md group-hover:visible group-hover:opacity-100 transition-opacity duration-300 z-10">
+                                <ul class="py-2">
+                                    <li><a href="/src/otherPages/AboutUs.html"
+                                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About
+                                            us</a>
+                                        </a>
+                                    </li>
+                                    <li><a href="/src/otherPages/service.html"
+                                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Services</a>
+                                        </a>
+                                    </li>
+                                    <li><a href="/src/otherPages/Pricing.html"
+                                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Pricing</a> </a>
+                                    </li>
+                                    <li class="/src/specialPages/404.html">
+                                        <button id="pages-employee-toggle"
+                                            class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                            Employee <i class="fa-solid fa-angle-down"
+                                                style="color: #000000; font-size: 12px;"></i>
+                                        </button>
+    
+                                        <!-- Nested Dropdown for Job Grids -->
+                                        <div id="pages-employee-menu"
+                                            class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
+                                            <ul class="py-2">
+                                                <li>
+                                                    <a href="/src/Employers/Employers.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Employers</a>
+                                                </li>
+                                                <li><a href="/src/Employers/EmployerDetails.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Employer details</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="relative">
+                                        <button id="pages-candidates-toggle"
+                                            class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                            Candidates <i class="fa-solid fa-angle-down"
+                                                style="color: #000000; font-size: 12px;"></i>
+                                        </button>
+    
+                                        <!-- Nested Dropdown for Job Grids -->
+                                        <div id="pages-candidates-menu"
+                                            class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
+                                            <ul class="py-2">
+                                                <li>
+                                                    <a href="/src/Candidates/Candidates.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Candidates</a>
+                                                </li>
+                                                <li><a href="/src/Candidates/CandidateProfile.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Candidate Profile</a></li>
+    
+                                                <li><a href="/src/Candidates/ProfileSetting.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Profile Setting</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="relative">
+                                        <button id="pages-helpcenter-toggle"
+                                            class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                            Helpcenter <i class="fa-solid fa-angle-down"
+                                                style="color: #000000; font-size: 12px;"></i>
+                                        </button>
+    
+                                        <!-- Nested Dropdown for Job Grids -->
+                                        <div id="pages-helpcenter-menu"
+                                            class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
+                                            <ul class="py-2">
+                                                <li>
+                                                    <a href="/src/HelpCenter/Overview.HTML"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Overview</a>
+                                                </li>
+                                                <li><a href="/src/HelpCenter/Faqs.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        FAQs</a></li>
+    
+                                                <li><a href="/src/HelpCenter/Guides.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Guides</a></li>
+                                                <li><a href="/src/HelpCenter/Support.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                                        Support</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="relative">
+                                        <button id="pages-blogs-toggle"
+                                            class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                            Blogs <i class="fa-solid fa-angle-down"
+                                                style="color: #000000; font-size: 12px;"></i>
+                                        </button>
+    
+                                        <!-- Nested Dropdown for Job Grids -->
+                                        <div id="pages-blogs-menu"
+                                            class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
+                                            <ul class="py-2">
+                                                <li>
+                                                    <a href="/src/Blog/Blogs.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Blog</a>
+                                                </li>
+                                                <li><a href="/src/Blog/BlogDetail.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Blog details </a></li>
+    
+    
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="relative">
+                                        <button id="pages-auth-toggle"
+                                            class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                            Auth Pages <i class="fa-solid fa-angle-down"
+                                                style="color: #000000; font-size: 12px;"></i>
+                                        </button>
+    
+                                        <!-- Nested Dropdown for Job Grids -->
+                                        <div id="pages-auth-menu"
+                                            class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
+                                            <ul class="py-2">
+                                                <li>
+                                                    <a href="/src/AuthPages/Login.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Login</a>
+                                                </li>
+                                                <li><a href="/src/AuthPages/Signup.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Sign up</a></li>
+    
+                                                <li><a href="/src/AuthPages/Forgotpwd.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Forgot password</a></li>
+                                                <li><a href="/src/AuthPages/LockScreen.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Lock Screen</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="relative">
+                                        <button id="pages-utility-toggle"
+                                            class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                            Utility <i class="fa-solid fa-angle-down"
+                                                style="color: #000000; font-size: 12px;"></i>
+                                        </button>
+    
+                                        <!-- Nested Dropdown for Job Grids -->
+                                        <div id="pages-utility-menu"
+                                            class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
+                                            <ul class="py-2">
+                                                <li>
+                                                    <a href="/src/Utility/TermsAndServices.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Terms of Services</a>
+                                                </li>
+                                                <li><a href="/src/Utility/privacyPolicy.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Privacy Policy</a></li>
+    
+    
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="relative">
+                                        <button id="pages-special-toggle"
+                                            class="w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                            Special <i class="fa-solid fa-angle-down"
+                                                style="color: #000000; font-size: 12px;"></i>
+                                        </button>
+    
+                                        <!-- Nested Dropdown for Job Grids -->
+                                        <div id="pages-special-menu"
+                                            class="sub-menu absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md opacity-0 invisible transition-opacity duration-300 z-10">
+                                            <ul class="py-2">
+                                                <li>
+                                                    <a href="/src/specialPages/comingSoon.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Coming Soon</a>
+                                                </li>
+                                                <li><a href="/src/specialPages/maintainence.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        maintainence</a></li>
+    
+                                                <li><a href="/src/specialPages/404.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        404!</a></li>
+                                                <li><a href="/src/specialPages/thankYou.html"
+                                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                        Thank you</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <!-- Contact Link -->
+                        <a href="/src/otherPages/Contact.html"
+                            class="text-gray-700 hover:text-gray-900 font-medium">Contact</a>
+    
+                    </div>
+                    <div class="flex items-center justify-between w-60 space-x-4 ">
+    
+    
+                        <!-- Search Bar centered -->
+                        <div class="relative ">
+                            <input type="text" placeholder="Search..."
+                                class="py-1 pl-6 pr-16 text-s  text-gray-600 bg-white border rounded-full focus:outline-none focus:ring focus:ring-gray-200 w-full" />
+                            <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M12.9 14.32a8 8 0 1 1 1.414-1.414l4.387 4.387a1 1 0 0 1-1.414 1.414l-4.387-4.387zM8 14a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                        </div>
+    
+                        <!-- Avatar Button between search and menu button -->
+                        <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar"
+                            class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 ">
+                            <img class="w-10 h-8 rounded-full" src="https://jobstack-shreethemes.vercel.app/static/media/05.a7ab2c82813cb95da9d6.jpg"
+                                alt="user photo">
+                        </button>
+                    </div>
+                </div>
+    
+    
+    
+                <!-- Mobile Menu Toggle -->
+                <div class="flex items-center justify-between w-full space-x-4 lg:hidden">
+                    <!-- Search Bar centered -->
+                    <div class="relative w-[35%] ">
+                        <input type="text" placeholder="Search..."
+                            class="py-2 pl-4 text-gray-600 bg-white border rounded-full focus:outline-none focus:ring focus:ring-gray-200 w-full" />
+                        <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M12.9 14.32a8 8 0 1 1 1.414-1.414l4.387 4.387a1 1 0 0 1-1.414 1.414l-4.387-4.387zM8 14a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </div>
+    
+                    <!-- Avatar Button between search and menu button -->
+                    <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar"
+                        class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 ">
+                        <img class="w-8 h-8 rounded-full" src="/src/assets/homep/05.a7ab2c82813cb95da9d6.jpg"
+                            alt="user photo">
+                    </button>
+    
+                    <!-- Menu Button (Three dots) on the right -->
+                    <button id="menuToggle" class="text-gray-700 hover:text-gray-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                
+    
+    
+            </nav>
+    
+            <!-- Mobile Menu -->
+    
+            <div id="mobileMenu" class="lg:hidden hidden absolute top-14 left-0 w-full bg-white shadow-md z-10">
+                <div class="flex justify-between py-2">
+                    <a href="/index.html" class="px-4 py-2 text-gray-700 hover:bg-gray-100"
+                      >Home</a>
+                    <a href="#" class="menu-item px-4 py-2 text-gray-700 hover:bg-gray-100" data-target="jobsDropdown">Jobs
+                        <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i></a>
+                    <a href="#" class="menu-item px-4 py-2 text-gray-700 hover:bg-gray-100"
+                        data-target="pagesDropdown">Pages <i class="fa-solid fa-angle-down"
+                            style="color: #000000; font-size: 12px;"></i></a>
+                    <a href="/src/otherPages/Contact.html" class=" px-4 py-2 text-gray-700 hover:bg-gray-100" ">Contact</a>
+    
+                </div>
+            </div>
+            <div>
+                <div id="jobsDropdown"
+                    class="submenu hidden bg-white border border-gray-200 shadow-lg rounded-md mt-2 w-full z-20">
+                    <ul class="" style="margin:40px; margin-top: 6.5rem;">
+                        <li><a href="/src/jobs/jobCategories.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job Categories </a></li>
+                        <li class="relative group">
+                            <!-- Job Grids -->
+                            <a href="/src/jobs/jobGrid.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                grids</a>
+                            
+                        </li>
+                        <li class="relative group">
+                            <a href="/src/jobs/jobList.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                lists</a>
+    
+                        </li>
+                        <li class="relative group">
+                            <a href="/src/jobs/jobDetail.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                Details</a>
+                        </li>
+                        <li><a href="/src/jobs/jobApply.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                Apply </a></li>
+                        <li><a href="/src/jobs/jobPost.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                Post </a></li>
+                        <li><a href="/src/jobs/career.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Career </a></li>
+    
+                    </ul>
+                </div>
+                <div id="pagesDropdown"
+                    class="submenu hidden bg-white border border-gray-200 shadow-lg rounded-md mt-2 w-full z-20">
+                    <ul class="py-2" style="margin:40px; margin-top: 5.7rem;">
+                        <li><a href="/src/otherPages/AboutUs.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About us</a> </a></li>
+                        <li><a href="/src/otherPages/service.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Services</a> </a></li>
+                        <li><a href="/src/otherPages/Pricing.html"
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Pricing</a> </a></li>
+                        <li class="relative">
+                            <button id="pagess-employee-toggle"
+                                class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                Employee <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                            </button>
+                        </li>
+                        <li class="relative">
+                            <button id="pagess-candidates-toggle"
+                                class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                Candidates <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                            </button>
+    
+                        </li>
+                        <li class="relative">
+                            <button id="pagess-helpcenter-toggle"
+                                class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                Helpcenter <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                            </button>
+    
+                        </li>
+                        <li class="relative">
+                            <button id="pagess-blogs-toggle"
+                                class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                Blogs <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                            </button>
+    
+    
+                        </li>
+                        <li class="relative">
+                            <button id="pagess-auth-toggle"
+                                class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                Auth Pages <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                            </button>
+    
+    
+                        </li>
+                        <li class="relative">
+                            <button id="pagess-utility-toggle"
+                                class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                Utility <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                            </button>
+    
+    
+                        </li>
+                        <li class="relative">
+                            <button id="pagess-special-toggle"
+                                class=" w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center justify-between">
+                                Special <i class="fa-solid fa-angle-down" style="color: #000000; font-size: 12px;"></i>
+                            </button>
+                        </li>
+    
+                        <li>
+                            <div id="pagess-employee-menu"
+                                class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
+                                style="
+                        position: absolute;
+                        left: 0; padding-left: 60px;">
+                                <ul class="py-2">
+                                    <li>
+                                        <a href="/src/Employers/Employers.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            Employers</a>
+                                    </li>
+                                    <li><a href="/src/Employers/EmployerDetails.html"
+                                            class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            Employer details</a></li>
+                                </ul>
+                            </div>
+                        </li>
+    
+    
+                        <li>
+                            <div id="pagess-candidates-menu"
+                                class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
+                                style="
+                        position: absolute;
+                        left: 0; padding-left: 60px;">
+                                <ul class="py-2">
+                                    <li>
+                                        <a href="/src/Candidates/Candidates.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            Candidates</a>
+                                    </li>
+                                    <li><a href="/src/Candidates/CandidateProfile.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            Candidate Profile</a></li>
+    
+                                    <li><a href="/src/Candidates/ProfileSetting.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            Profile Setting</a></li>
+                                </ul>
+                            </div>
+                        </li>
+    
+    
+                        <li>
+                            <div id="pagess-helpcenter-menu"
+                                class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
+                                style="
+                            position: absolute;
+                            left: 0; padding-left: 60px;">
+                                <ul class="py-2">
+                                    <ul class="py-2">
+                                        <li>
+                                            <a href="/src/HelpCenter/Overview.HTML"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Overview</a>
+                                        </li>
+                                        <li><a href="/src/HelpCenter/Faqs.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                FAQs</a></li>
+    
+                                        <li><a href="/src/HelpCenter/Guides.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                                Guides</a></li>
+                                        <li><a href="/src/HelpCenter/Support.html"
+                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Job
+                                                Support</a></li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </li>
+    
+    
+                        <li>
+                            <div id="pagess-blogs-menu"
+                                class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
+                                style="
+                            position: absolute;
+                            left: 0; padding-left: 60px;">
+                                <ul class="py-2">
+                                    <li>
+                                        <a href="/src/Blog/Blogs.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            Blog</a>
+                                    </li>
+                                    <li><a href="/src/Blog/BlogDetail.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            Blog details </a></li>
+    
+    
+                                </ul>
+                            </div>
+                        </li>
+    
+    
+                        <li>
+                            <div id="pagess-auth-menu"
+                                class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
+                                style="
+                            position: absolute;
+                            left: 0; padding-left: 60px;">
+                                <ul class="py-2">
+                                    <li>
+                                        <a href="/src/AuthPages/Login.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            Login</a>
+                                    </li>
+                                    <li><a href="/src/AuthPages/Signup.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            Sign up</a></li>
+    
+                                    <li><a href="/src/AuthPages/Forgotpwd.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            Forgot password</a></li>
+                                    <li><a href="/src/AuthPages/LockScreen.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            Lock Screen</a></li>
+                                </ul>
+    
+                            </div>
+                        </li>
+    
+    
+                        <li>
+                            <div id="pagess-utility-menu"
+                                class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
+                                style="
+                            position: absolute;
+                            left: 0; padding-left: 60px;">
+                                <ul class="py-2">
+                                    <li>
+                                        <a href="/src/Utility/TermsAndServices.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            Terms of Services</a>
+                                    </li>
+                                    <li><a href="/src/Utility/privacyPolicy.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            Policy</a></li>
+    
+    
+                                </ul>
+                            </div>
+                        </li>
+    
+    
+                        <li>
+                            <div id="pagess-special-menu"
+                                class="sub-menu  p-4 mt-9 w-full z-20 bg-white  rounded-md opacity-0 invisible transition-opacity duration-300"
+                                style="
+                            position: absolute;
+                            left: 0; padding-left: 60px;">
+                                <ul class="py-2">
+                                    <li>
+                                        <a href="/src/specialPages/comingSoon.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            Coming Soon</a>
+                                    </li>
+                                    <li><a href="/src/specialPages/maintainence.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            maintainence</a></li>
+    
+                                    <li><a href="/src/specialPages/404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            404!</a></li>
+                                    <li><a href="/src/specialPages/thankYou.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                            Thank you</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    </header>
+    <!-- Google Map -->
+    <div class="w-full h-full mt-4">
+        <iframe
+          title="contact-frame"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
+          class="w-full h-[500px]"
+          style="border:0;"
+          allowfullscreen=""
+        ></iframe>
+        <div class="container mx-auto px-4 ">
+            <div class="flex flex-wrap items-center ">
+              <!-- Left Section -->
+              <div class="w-full lg:w-1/2 p-4">
+                <div class="flex justify-center">
+                    <img src="https://jobstack-shreethemes.vercel.app/static/media/contact.fa1dcec179ab187ef0877382779d71df.svg" alt="Illustration" class="max-w-full" style="
+                    width: 550px;
+                ">
+                
+                </div>
+              </div>                    
+        
+              <!-- Right Section -->
+              <div class="lg:col-span-5 md:col-span-6">
+                <div class="bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-700 p-6 relative lg:py-24 py-16">
+                  <h2 class="text-2xl font-bold text-gray-800 mb-6 leading- normal">Get in touch!</h2>
+                  <form class="space-y-4">
+                    <!-- Name and Email -->
+                    <div class="flex gap-4 mb-4">
+                      <div class="w-1/2">
+                        <label class="block text-sm font-semibold text-gray-700 mb-1" for="name">Your Name:</label>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          class="block w-full border border-gray-200 rounded-md p-2 focus:ring-green-500 focus:border-green-500"
+                          placeholder="Name:"
+                          required
+                        />
+                      </div>
+                      <div class="w-1/2">
+                        <label class="block text-sm font-semibold text-gray-700 mb-1" for="email">Your Email:</label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          class="block w-full border border-gray-200 rounded-md p-2 focus:ring-green-500 focus:border-green-500"
+                          placeholder="Email:"
+                          required
+                        />
+                      </div>
+                    </div>
+        
+                    <!-- Subject -->
+                    <div class="mb-4">
+                      <label class="block text-sm font-semibold text-gray-700 mb-1" for="subject">Your Question:</label>
+                      <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        class="block w-full border border-gray-200 rounded-md p-2 focus:ring-green-500 focus:border-green-500"
+                        placeholder="Subject:"
+                        required
+                      />
+                    </div>
+        
+                    <!-- Message -->
+                    <div class="mb-4">
+                      <label class="block text-sm font-semibold text-gray-600 mb-1" for="message">Your Comment:</label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        class="block w-full border border-gray-200 rounded-md p-2 focus:ring-green-500 focus:border-green-500"
+                        placeholder="Message:"
+                        required
+                      ></textarea>
+                    </div>
+        
+                    <!-- Submit Button -->
+                    <button
+                      type="submit"
+                      class="bg-emerald-600 text-white py-2 px-4 rounded-md hover:bg-emerald-700 focus:ring-4 focus:ring-green-400"
+                    >
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[30px] text-center px-6">
+                <!-- Phone -->
+                <div class="bg-white  rounded-lg p-6 ">
+                  <div class="flex justify-center mb-4">
+                    <div class="size-14 bg-emerald-600/5 text-emerald-600 rounded-xl text-2xl flex align-middle justify-center items-center mx-auto shadow-sm dark:shadow-gray-800"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path></svg></div>
+                  </div>
+                  <h3 class="text-lg font-semibold mb-2">Phone</h3>
+                  <p class="text-gray-400 text-sm mb-2">The phrasal sequence of the is now so that many campaign and benefit</p>
+                  <p class="text-emerald-600 font-semibold">
+                    +152 534-468-854</p>
+                </div>
+            
+                <!-- Email -->
+                <div class="bg-white  rounded-lg p-6">
+                  <div class="flex justify-center mb-4">
+                    <div class="size-14 bg-emerald-600/5 text-emerald-600 rounded-xl text-2xl flex align-middle justify-center items-center mx-auto shadow-sm dark:shadow-gray-800"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></div>
+                  </div>
+                  
+                  <h3 class="text-lg font-semibold mb-2">Email</h3>
+                  <p class="text-gray-400 text-sm mb-2">The phrasal sequence of the is now so that many campaign and benefit</p>
+                  <p class="text-emerald-600 font-semibold">contact@example.com</p>
+                </div>
+            
+                <!-- Location -->
+                <div class="bg-white  rounded-lg p-6">
+                  <div class="flex justify-center mb-4">
+                    <div class="size-14 bg-emerald-600/5 text-emerald-600 rounded-xl text-2xl flex align-middle justify-center items-center mx-auto shadow-sm dark:shadow-gray-800"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"></path></svg></div> 
+                  </div>
+                  <h3 class="text-lg font-semibold mb-2">Location</h3>
+                  <p class="text-gray-400 text-sm mb-2">C/54 Northwest Freeway, Suite 558, Houston, USA 485</p>
+                  <a href="#" class="text-emerald-600 font-semibold hover:underline">View on Google map</a>
+                </div>
+              </div>
+            </body>
+            </html>
+            </div>  
+            <footer class="relative bg-slate-900  px-20">
+                <div class="container mx-auto py-12">
+                    <div class="grid grid-cols-1">
+                        <div class="relative">
+                            <div class="w-full">
+                                <div class="grid md:grid-cols-12 grid-cols-1 gap-[30px]">
+                                    <div class="md:col-span-3">
+                                        <a href="#" class="flex justify-center md:justify-start focus:outline-none">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI0AAAAYCAYAAADH9X5VAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjlFMDkzNEY3QUQxRjExRUQ4QkREQThFQTZFNEQwQTcxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjlFMDkzNEY4QUQxRjExRUQ4QkREQThFQTZFNEQwQTcxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OUUwOTM0RjVBRDFGMTFFRDhCRERBOEVBNkU0RDBBNzEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OUUwOTM0RjZBRDFGMTFFRDhCRERBOEVBNkU0RDBBNzEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7uuRVeAAAKQklEQVR42uxaC5RVZRX+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" class="" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="md:col-span-9 mb-14">
+                                        <ul class="list-disc footer-list text-center md:text-right space-x-3">
+                                            <li class="inline-block">
+                                                <a href="index.html" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium me-4">Home</a>
+                                            </li>
+                                            <li class="inline-block mt-[10px] md:mt-0">
+                                                <a href="/services" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium me-4">How it works</a>
+                                            </li>
+                                            <li class="inline-block mt-[10px] md:mt-0">
+                                                <a href="#" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium me-4">Create a job</a>
+                                            </li>
+                                            <li class="inline-block mt-[10px] md:mt-0">
+                                                <a href="/aboutus" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium me-4">About us</a>
+                                            </li>
+                                            <li class="inline-block mt-[10px] md:mt-0">
+                                                <a href="/contact" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-medium">Contact us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-[30px] border-t border-gray-800 ">
+                        <div class="container mx-auto text-center">
+                            <div class="grid md:grid-cols-2 items-center gap-6">
+                                <div class="md:text-left text-center">
+                                    <p class="mb-0 text-gray-300 font-medium">©
+                                        <script>document.write(new Date().getFullYear())</script> Jobstack. Design & Develop with 
+                                        <i class="mdi mdi-heart text-red-600"></i> by 
+                                        <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.
+                                    </p>
+                                </div>
+                                <ul class="list-none md:text-right text-center space-x-0.5">
+                                    <li class="inline">
+                                        <a href="https://1.envato.market/shreethemes-portfolio" target="_blank"
+                                            class="btn btn-icon btn-sm border-2 border-gray-800 rounded-md hover:border-emerald-600 hover:bg-emerald-600 text-white">
+                                            🛒
+                                        </a>
+                                    </li>
+                                    <li class="inline">
+                                        <a href="https://dribbble.com/shreethemes" target="_blank"
+                                            class="btn btn-icon btn-sm border-2 border-gray-800 rounded-md hover:border-emerald-600 hover:bg-emerald-600 text-white">
+                                            🏀
+                                        </a>
+                                    </li>
+                                    <li class="inline">
+                                        <a href="https://www.behance.net/shreethemes" target="_blank"
+                                            class="btn btn-icon btn-sm border-2 border-gray-800 rounded-md hover:border-emerald-600 hover:bg-emerald-600 text-white">
+                                            🖌
+                                        </a>
+                                    </li>
+                                    <li class="inline">
+                                        <a href="http://linkedin.com/company/shreethemes" target="_blank"
+                                            class="btn btn-icon btn-sm border-2 border-gray-800 rounded-md hover:border-emerald-600 hover:bg-emerald-600 text-white">
+                                            🔗
+                                        </a>
+                                    </li>
+                                    <li class="inline">
+                                        <a href="https://www.facebook.com/shreethemes" target="_blank"
+                                            class="btn btn-icon btn-sm border-2 border-gray-800 rounded-md hover:border-emerald-600 hover:bg-emerald-600 text-white">
+                                            📘
+                                        </a>
+                                    </li>
+                                    <li class="inline">
+                                        <a href="https://www.instagram.com/shreethemes/" target="_blank"
+                                            class="btn btn-icon btn-sm border-2 border-gray-800 rounded-md hover:border-emerald-600 hover:bg-emerald-600 text-white">
+                                            📸
+                                        </a>
+                                    </li>
+                                    <li class="inline">
+                                        <a href="https://twitter.com/shreethemes" target="_blank"
